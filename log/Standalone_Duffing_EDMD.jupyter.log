@@ -1,0 +1,48 @@
+### Fri JUN 30 2023 ###
+
+I am currently starting at the Jupyter Notebook "Standalone_Duffing_EDMD" by Sebastian Peitz and Katharina Bieker, department of mathematics, Paderborn University.
+
+From my understanding, this Jupyter notebook shows how their QuaSiModO algorithm works.
+Applied on the Duffing equation as an example system.
+The Duffing equation seems to be a small scale nonlinear system.
+Sort of a nonlinear benchmark.
+A system many people in the community know, and have an understanding of how it behaves.
+
+First introspective:
+What (python) libaries do they need?
+(Since the rest of their code seems to be written in C++)
+
+   * numpy
+   * scipy.linalg
+   * scipy.optimize
+
+Plus matplotlib for plotting, and a scipy.special library for declaring binomials.
+Ok.
+The setup does not seem to be overwhelmingly complex.
+Here is the Duffing equation/system:
+
+   dx1 = x2
+   dx2 = -delta * x2 - alpha * x1 - beta * x1³ + u
+
+Ok.
+That's what I would consider as a slightly nonlinear system.
+
+Maybe we should take a first look at how this system behaves autonomously?
+
+(...)
+Ok, I implemented the Duffing equation with the given parameters, and integrated it over [0, 8] time units for the initial condition x0 = [0, 1].
+
+From the phase plot, it seems like it is some sort of a deformed, locally instable, oscillator.
+
+That's about all I know for now.
+Haven't tested the behavior when being exposed to an input.
+
+Maybe I should give it a try.
+
+Ok.
+I have to take a python exercise here.
+How does
+
+   nonzero
+
+really works, and what does it return?

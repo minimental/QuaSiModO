@@ -1,0 +1,20 @@
+##
+# D U F F I N G . P Y
+#
+# This code implements the Duffing equation
+#
+#    dx1 = x2
+#    dx2 = -delta * x2 - alpha * x1 - beta * x1³ + u
+#
+# "Vector Sum Control of Pulsed Accelerating Fields in Lorentz Force Detuned Superconducting Cavities"
+# PhD Thesis
+# Thomas Schilcher
+# 1998
+#
+# Section 3.3.3 "Transient Behavior of a Pulsed RF Cavity with Beam Loading"
+# page 44
+# figure 3.10
+#
+# Author: Herrmann, Max
+# Date: Thu JUN 29 2023
+# Revision:  0   Thu JUN 29 2023   First version / Herrmann, Max
